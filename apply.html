@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="uft-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,161 @@
     <meta name="keywords" content="Form, job application">
     <meta name="authors" content="Ton Hoang Do, David Tucker, Myles McCarthy and Oscar Hill">
     <link rel="stylesheet" href="styles/pagestyle.css">
+    <link rel="stylesheet" href="styles/apply-layout.css">
     <title>Job Application Form</title>
 </head>
+
 <body>
-    <nav>
-        <a href="index.html" target="_blank">Home</a>
-        <a href="jobs.html" target="_blank">Careers</a>
-        <a href="about.html" target="_blank">About Us</a>
-        <a href="apply.html" target="_blank">Join Our Team</a>
-    </nav>
+    <header>
+        <!-- Company Logo-->
+        <a href="index.html"><img src="images/logos/Shopwell-horizontal.png" alt="ShopWell logo"
+                title="ShopWell logo"></a>
+        <!-- Navigation-->
+        <nav>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="jobs.html" target="_blank">Careers</a>
+            <a href="about.html" target="_blank">About Us</a>
+            <a href="apply.html" target="_blank">Join Our Team</a>
+        </nav>
+    </header>
+    <h1>Job Application Form</h1>
+    <!-- Application Form-->
+    <form method="POST" action="https://mercury.swin.edu.au/it000000/formtest.php">
+
+        <h2>Position Details</h2>
+
+        <label for="jobref">Job Reference Number:</label>
+        <input type="text" id="jobref" name="jobref" pattern="[A-Za-z0-9]" maxlength="5"
+            title="Exactly 5 alphanumeric characters" required>
+        <br>
+
+        <h2>Personal Information</h2>
+
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" pattern="[A-Za-z]{1,20}" maxlength="20"
+            title="Up to 20 alphabetic characters only" required>
+        <br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" pattern="[A-Za-z]{1,20}" maxlength="20"
+            title="Up to 20 alphabetic characters only" required>
+        <br>
+        <!-- I had to look up how to do the date pattern-->
+        <label for="dob">Date of Birth (dd/mm/yyyy):</label>
+        <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy"
+            pattern="(0[1-9]|[12]\d|3[01])/(0[1-9]|1[0-2])/\d{4}" maxlength="10" title="Date of Birth"
+            required>
+        <br>
+
+        <fieldset>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="nonbinary" name="gender" value="Non-binary">
+            <label for="nonbinary">Non-binary</label>
+
+            <input type="radio" id="prefernot" name="gender" value="Prefer not to say">
+            <label for="prefernot">Prefer not to say</label>
+        </fieldset>
+        <br>
+
+        <h2>Address</h2>
+
+        <label for="street">Street Address:</label>
+        <input type="text" id="street" name="street" maxlength="40" required>
+        <br>
+
+        <label for="suburb">Suburb / Town:</label>
+        <input type="text" id="suburb" name="suburb" maxlength="40" required>
+        <br>
+
+        <label for="state">State:</label>
+        <select id="state" name="state" required>
+            <option value="" disabled selected>Select state</option>
+            <option value="VIC">VIC</option>
+            <option value="NSW">NSW</option>
+            <option value="QLD">QLD</option>
+            <option value="NT">NT</option>
+            <option value="WA">WA</option>
+            <option value="SA">SA</option>
+            <option value="TAS">TAS</option>
+            <option value="ACT">ACT</option>
+        </select>
+        <br>
+
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" pattern="\d{4}" maxlength="4" title="Exactly 4 digits"
+            required>
+        <br>
+
+        <h2>Contact Details</h2>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="\d{8,12}" maxlength="12"
+            title="8 to 12 digits, no spaces or symbols" required>
+        <br>
+
+        <h2>Skills</h2>
+
+        <p>Skill List:</p>
+
+        <input type="checkbox" id="skill-js" name="skills" value="JavaScript">
+        <label for="skill-js">JavaScript</label>
+        <br>
+
+        <input type="checkbox" id="skill-python" name="skills" value="Python">
+        <label for="skill-python">Python</label>
+        <br>
+
+        <input type="checkbox" id="skill-java" name="skills" value="Java">
+        <label for="skill-java">Java</label>
+        <br>
+
+        <input type="checkbox" id="skill-html" name="skills" value="HTML/CSS">
+        <label for="skill-html">HTML / CSS</label>
+        <br>
+
+        <input type="checkbox" id="skill-sql" name="skills" value="SQL">
+        <label for="skill-sql">SQL</label>
+        <br>
+
+        <input type="checkbox" id="skill-react" name="skills" value="React">
+        <label for="skill-react">React</label>
+        <br>
+
+        <input type="checkbox" id="skill-nodejs" name="skills" value="Node.js">
+        <label for="skill-nodejs">Node.js</label>
+        <br>
+
+        <input type="checkbox" id="skill-pm" name="skills" value="Project Management">
+        <label for="skill-pm">Project Management</label>
+        <br>
+
+        <input type="checkbox" id="skill-ux" name="skills" value="UI/UX Design">
+        <label for="skill-ux">UI / UX Design</label>
+        <br>
+
+        <input type="checkbox" id="skill-data" name="skills" value="Data Analysis">
+        <label for="skill-data">Data Analysis</label>
+        <br>
+
+        <label for="otherskills">Other Skills:</label>
+        <br>
+        <textarea id="otherskills" name="otherskills" rows="5" cols="40"></textarea>
+        <br>
+
+        <input type="submit" value="Submit Application">
+        <input type="reset" value="Reset Form">
+
+    </form>
 </body>
+
 </html>
