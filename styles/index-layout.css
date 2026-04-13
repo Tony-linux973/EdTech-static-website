@@ -72,7 +72,8 @@ nav a:hover {
     border: 1px solid #c8e0f8;
     border-radius: 6px;
     padding: 10px;
-    display: inline-block;    
+    display: inline-block;
+    width: 100%;    
 }
 
 .search-bar legend {
@@ -82,9 +83,10 @@ nav a:hover {
 
 .search-bar input[type="text"] {
     padding: 8px;
-    width: 300px;
+    width: 100%;
     border: 1px solid #3d8ef0;
     border-radius: 4px;
+    margin-bottom: 6px;
 }
 
 .search-bar button {
@@ -95,6 +97,8 @@ nav a:hover {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    width: 100%;
+    font-size: 12px;
 }
 
 .search-bar button:hover {
@@ -247,4 +251,15 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: whitesmoke;
+}
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+
+    #header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
