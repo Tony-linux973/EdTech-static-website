@@ -10,3 +10,18 @@ body {
     background-color: #f0f4ff;
     color: #1a2b5e;
 }
+
+ nav {
+    text-align: center;
+    background-color: #1a2e69;
+}
+nav a {
+    margin: 0 15px;
+    color: #ffffff;
+    font-weight: bold;
+} 
+header{
+    display: grid;
+    grid-template-columns:  1fr;
+    justify-items: center;
+}
