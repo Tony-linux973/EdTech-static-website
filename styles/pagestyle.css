@@ -30,16 +30,6 @@ nav a:hover {
     color: #3d8ef0;
 }
 
-/* Footer to bottom */
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-main {
-  flex: 1;
-}
-
 /* Footer text formatting */
 footer {
     text-align: center;
