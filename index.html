@@ -31,9 +31,11 @@
             <div class="search-bar">
                 <form action="#" method="get">
                     <fieldset>
-                        <legend>Search for items or categories</legend>
-                        <input type="text" id="store-search" name="search-query" placeholder="e.g., electronics, clothing, smartphones">
-                        <button type="submit">Search</button>
+                        <legend>Search for products</legend>
+                        <label for="search-query">Item's Name</label>
+                        <input type="search" id="search-query" name="search-query" placeholder="e.g., electronics, clothing, smartphones"
+                        aria-label="Search through site content">
+                        <button type="submit" aria-label="Search" style="font-size: 1.5rem;">&#8981;</button>
                     </fieldset>                
                 </form>
             </div>
@@ -41,18 +43,20 @@
         
     </header>
 
-    <!--Slogan-->
-    <div class="slogan">
-        <p>Seamless retail, smarter experience</p>
-    </div>
+    
+    
     
     <!--NAVIGATION BAR with links to Home, Careers, About Us and Join Our Team pages-->
     <nav>
-        <a href="index.html" target="_blank">Home</a>
-        <a href="jobs.html" target="_blank">Careers</a>
-        <a href="about.html" target="_blank">About Us</a>
-        <a href="apply.html" target="_blank">Join Our Team</a>
+        <a href="index.html" target="_self" >Home</a>
+        <a href="jobs.html" target="_self" >Careers</a>
+        <a href="about.html" target="_self" >About Us</a>
+        <a href="apply.html" target="_self" >Join Our Team</a>
     </nav>
+    <!--Slogan-->
+    <div class="slogan">
+        <h1>Seamless retail, smarter experience</h1>
+    </div>
     <hr>
 
     <!--======== MAIN CONTENT ===============-->
@@ -76,7 +80,7 @@
             <!--Product lists with merged cell table-->
             <section>
                 <div class="table-section">
-                     <h2 style="text-align:center;">ShopWell Product List</h2>
+                     <h2 style="text-align: center;">ShopWell Product List</h2>
 
                     <table>
 
@@ -100,7 +104,7 @@
                             <!--Electronic Category (Rowspan)-->
                             <tr>
                                 <td rowspan="2" class="category">Electronic</td>
-                                <td><img src="images/products/laptop.jpeg" alt="laptop.jpeg" width="150"></td>
+                                <td><img src="images/products/laptop.jpeg" alt="Laptop" width="150"></td>
                                 <td>Laptop</td>
                                 <td>High Performance Gaming Laptop</td>
                                 <td>$1999</td>
@@ -108,7 +112,7 @@
                             </tr>
 
                             <tr>
-                                <td><img src="images/products/smartphone.jpg" alt="smartphone.jpg" width="100"></td>
+                                <td><img src="images/products/smartphone.jpg" alt="Smartphone" width="100"></td>
                                 <td>Smartphone</td>
                                 <td>Latest 5G Smartphone</td>
                                 <td>$999</td>
@@ -118,7 +122,7 @@
                             <!-- Accessories Category-->
                             <tr>
                                 <td rowspan="2" class="category">Accessories</td>
-                                <td><img src="images/products/headphone.jpg" alt="headphone.jpg" width="100"></td>
+                                <td><img src="images/products/headphone.jpg" alt="Headphone" width="100"></td>
                                 <td>Headphone</td>
                                 <td>Wireless Noise Cancelling Headphone</td>
                                 <td>$375</td>
@@ -126,7 +130,7 @@
                             </tr>
 
                             <tr>
-                                <td class="smart-watch"><img src="images/products/smartwatch.jpg" alt="smartwatch.jpg" width="150"></td>
+                                <td class="smart-watch"><img src="images/products/smartwatch.jpg" alt="Smart Watch" width="150"></td>
                                 <td>Smart Watch</td>
                                 <td>Waterproof Fitness Smart Watch</td>
                                 <td>$397</td>
