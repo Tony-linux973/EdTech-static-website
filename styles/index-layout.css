@@ -46,24 +46,7 @@ header {
 }
 
 /* Navigation */
-nav {
-    padding: 10px 20px;
-    background-color: #1a2e69;
-    text-align: center;
-}
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-    font-weight: bold;
-    
-}
-
-nav a:hover {
-    /* Yellow on dark navy — high contrast hover */
-    color: #ffdd57;
-}
 
 /* Search bar */
 .search-bar {
@@ -247,22 +230,7 @@ td button:hover {
 }
 
 /* Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #1a2b5e;
-    color: #c8e0f8;    
-}
 
-footer a {
-    color: yellow;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-    color: whitesmoke;
-}
 /* Responsive Media Queries */
 @media (max-width: 768px) {
     table {
