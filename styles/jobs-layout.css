@@ -2,6 +2,7 @@ header{
     display: grid;
     grid-template-columns:  1fr;
     justify-items: center;
+    background-color : #12204a;
 }
 
 /* navigation box */
