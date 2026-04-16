@@ -10,32 +10,45 @@ h1 {
     margin-top: 15px;
 }
 
-/* Figure */
+/* Figure formatting*/
 /* Creating flexbox for entire page */
 .article{
     display: flex;
     gap: 2em;
-    justify-content: flex-start;
+    align-items: center;
 }
-/* Image formatting */
-.container img {
-    border: 5px solid #12204A;
-    width: 575px;
-    height: auto;
+/* All writing in article */
+article {
+    margin-left: 10px;
+    flex: 2;
 }
 /* Putting figure on the right */
 .container {
     flex: 1;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center; 
-    margin-top: 150px;
+    min-width: 300px;
+}
+/* Image formatting */
+.container img {
+    border: 5px solid #12204A;
+    max-width: 90%;
+    height: auto;
 }
 
-/* All writing in article */
-article {
-    margin-left: 10px;
-    flex: 2;
+/* Switching image view when window too small */
+@media (max-width: 800px) { 
+    /* Switching from row to column */
+    .article {
+        flex-direction: column;
+    }
+    /* New image formatting */
+    .container img {
+        min-width: 0;
+        width: 100%;   
+        max-width: 100%;
+    }
 }
 
 /* Sub titles formatting */
@@ -47,6 +60,7 @@ h2 {
 /* Student id size */
 #studentid {
     font-size: 16px;
+    margin-bottom: 5px;
 }
 
 /* Team list structure */
@@ -71,6 +85,9 @@ dt {
 }
 #quoteheading{
     margin-top: 5px;
+}
+h3 {
+    font-size: 16px;
 }
 
 /* Table */
@@ -102,4 +119,8 @@ body {
 }
 main {
   flex: 1;
+}
+
+#footer-break {
+    margin-top: 20px;
 }
