@@ -43,7 +43,7 @@ h1 {
 }
 
 /* Figure on right */
-.article{
+.page{
     display: flex;
     gap: 2rem;
     justify-content: flex-start;
