@@ -1,27 +1,27 @@
 /* Navigation */
+/* Blue box around nav */
 nav {
     padding: 10px 20px;
     background-color: #1a2e69;
     text-align: center;
 }
+/* Formatting of links */
 nav a {
     color: #c8e0f8;
     text-decoration: none;
     margin-right: 20px;
     font-weight: bold;
 }
+/* Hover blue effect */
 nav a:hover {
     color: #3d8ef0;
 }
 
-/* Header 1 */
+/* Header 1 formatting*/
 h1 {
-    font-size: 40px;        
-    font-weight: bold;        
-    color: #1a2e69;           
+    font-size: 40px;         
     text-align: center;       
     margin-top: 10px;
-    margin-bottom: 5px;
 }
 
 /* Article break spacing */
@@ -29,17 +29,20 @@ h1 {
     margin-top: 15px;
 }
 
-/* Figure on right */
+/* Figure */
+/* Creating flexbox for entire page */
 .article{
     display: flex;
-    gap: 2rem;
+    gap: 2em;
     justify-content: flex-start;
 }
+/* Image formatting */
 .container img {
     border: 5px solid #12204A;
     width: 575px;
     height: auto;
 }
+/* Putting figure on the right */
 .container {
     flex: 1;
     display: flex;
@@ -48,26 +51,31 @@ h1 {
     margin-top: 150px;
 }
 
-/* Entire article */
+/* All writing in article */
 article {
     margin-left: 10px;
     flex: 2;
 }
 
-/* Sub titles */
+/* Sub titles formatting */
 h2 {
     font-size: 30px;
     margin-top: 10px;
 }
 
-/* List structure */
+/* Student id size */
+#studentid {
+    font-size: 16px;
+}
+
+/* Team list structure */
 dl {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
 }
 
-/* List formatting */
+/* Team list text formatting */
 ul {
     list-style: none;
 }
@@ -85,11 +93,13 @@ dt {
 }
 
 /* Table */
+/* Table positioning */
 table{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
+/* Table text formating */
 th, td {
     border-color: #000000;
     border: 1px solid;
@@ -98,7 +108,10 @@ th, td {
 table caption {
     font-weight: bold;
 }
-
+/* Table hover bolden */
+td:hover{
+    font-weight: bold;
+}
 
 /* Footer to bottom */
 body {
@@ -110,7 +123,7 @@ main {
   flex: 1;
 }
 
-/* Footer formatting */
+/* Footer text formatting */
 footer {
     text-align: center;
     padding: 15px;
@@ -118,6 +131,7 @@ footer {
     color: #c8e0f8;
     clear: both; 
 }
+/* Footer links formatting */
 footer a {
     color: #3d8ef0;
     text-decoration: none;
