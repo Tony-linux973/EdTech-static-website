@@ -80,12 +80,16 @@ h2, #salary {
     margin-left: 15px;         
     margin-bottom: 20px;     
 }
+/* flex container for job info sections */
+.job-info-flex-container {
+    display: flex;
+    gap: 2em;
+}
 
 /* gets class for each main section styling reporting line, key responsibilities and essential requirements */
 .reporting-line, .key-responsibilities, .essential-requirements {
     padding: 15px;              /* adds padding */
     margin-bottom: 20px;        /* adds margin  to bottom*/
     width: 30%;                 /* each section only takes 30%*/
-    display: inline-block;      /*sets up sections to be side by side*/
-    vertical-align: top;        /* aligns sections to the top*/
 }
+
