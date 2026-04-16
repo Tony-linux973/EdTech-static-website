@@ -1,6 +1,7 @@
 /* Header with background image*/
 header {
-    background-image: url(../images/marketing/background.avif);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url(../images/marketing/background.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,7 +16,7 @@ header {
     padding: 15px;
     border-radius: 8px;
     width: 320px;
-    background-color: rgba(26, 43, 94, 0.85);
+    
 }
 
 .header-top {
@@ -35,7 +36,7 @@ header {
 .header-title h1 {
     font-size: 1.8em;
     margin-bottom: 5px;
-    color: rgb(70, 145, 250);    
+    color: white;    
 }
 
 .header-title p {
@@ -52,7 +53,7 @@ nav {
 }
 
 nav a {
-    color: #c8e0f8;
+    color: white;
     text-decoration: none;
     margin-right: 20px;
     font-weight: bold;
@@ -60,7 +61,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #3d8ef0;
+    /* Yellow on dark navy — high contrast hover */
+    color: #ffdd57;
 }
 
 /* Search bar */
@@ -75,18 +77,26 @@ nav a:hover {
     display: inline-block;
     width: 100%;    
 }
-
 .search-bar legend {
     font-size: 0.875em;
     color: #c8e0f8;
+    font-weight: bold;
 }
 
-.search-bar input[type="text"] {
+.search-bar label {
+    font-size: 0.875em;
+    color: whitesmoke;
+    
+}
+
+.search-bar input[type="search"] {
     padding: 8px;
-    width: 100%;
+    width: 70%;
     border: 1px solid #3d8ef0;
     border-radius: 4px;
-    margin-bottom: 6px;
+    margin-top: 10px;
+    
+
 }
 
 .search-bar button {
@@ -97,8 +107,9 @@ nav a:hover {
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
-    width: 100%;
-    font-size: 12px;
+    width: 20%;
+    float: right;
+    
 }
 
 .search-bar button:hover {
@@ -109,8 +120,8 @@ nav a:hover {
 .slogan {
     text-align: center;
     padding: 15px;
-    background-color: #5ca4fd;
-    color: white;
+    
+    
     font-size: 1.3em;
     font-weight: bold;
     letter-spacing: 1px;
@@ -202,7 +213,7 @@ td.category {
 }
 
 td button {
-    background-color: #3d8ef0;
+    background-color: #3011a0;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -244,7 +255,7 @@ footer {
 }
 
 footer a {
-    color: #3d8ef0;
+    color: yellow;
     text-decoration: none;
 }
 
