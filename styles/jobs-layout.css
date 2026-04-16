@@ -1,3 +1,9 @@
+header{
+    display: grid;
+    grid-template-columns:  1fr;
+    justify-items: center;
+}
+
 /* navigation box */
 nav {
     padding: 10px 20px;
@@ -84,4 +90,24 @@ h2, #salary {
     width: 30%;                 /* each section only takes 30%*/
     display: inline-block;      /*sets up sections to be side by side*/
     vertical-align: top;        /* aligns sections to the top*/
+}
+
+
+footer {
+    clear: both;
+    width: 100%; 
+    text-align: center;
+    padding: 15px;
+    background-color: #1a2b5e;
+    color: #c8e0f8;  
+}
+
+footer a {
+    color: #3d8ef0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
 }
