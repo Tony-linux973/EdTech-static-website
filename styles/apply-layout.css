@@ -161,7 +161,8 @@ legend {
 
 /* Submit button in site blue */
 input[type="submit"] {
-    background-color: #3d8ef0;
+    background-color: #1a5fb5;
+    /* darker blue — passes contrast */
     color: white;
     border: none;
     padding: 8px 16px;
@@ -171,9 +172,9 @@ input[type="submit"] {
     transition: background-color 0.2s, transform 0.1s;
 }
 
-/* Darken submit on hover */
 input[type="submit"]:hover {
-    background-color: #1a6fd4;
+    background-color: #134a8e;
+    /* darker again on hover */
 }
 
 /* Slight press effect on click */
