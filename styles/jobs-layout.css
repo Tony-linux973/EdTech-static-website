@@ -95,3 +95,14 @@ h2, #salary {
     width: 30%;                 /* each section only takes 30%*/
 }
 
+aside {
+    float: right;
+    width: 25%;
+    margin: 2%;
+    padding: 6px;
+    color: #1a2e69;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    border: 1px solid #1a2e69;  /* adds a line around the text */
+}
