@@ -218,3 +218,7 @@ input[type="reset"]:hover {
         width: 100%;
     }
 }
+/* Forces field to span full row width — used for street address */
+.form-row .field--full {
+    grid-column: 1 / -1;
+}
